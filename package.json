@@ -1,0 +1,35 @@
+{
+  "name": "portal-frontend",
+  "version": "1.3.25",
+  "private": true,
+  "type": "module",
+
+  "scripts": {
+    "dev": "next dev --hostname 'portal-frontend' --port 80",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:js": "eslint --ext \".js,.ts,.tsx,.jsx\" --ignore-path .gitignore .",
+    "lintfix": "prettier --write --list-different . && npm run lint:js --fix",
+    "release": "gulp release"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1148.0",
+    "elastic-apm-node": "^3.35.0",
+    "next": "12.1.6",
+    "react": "18.1.0",
+    "react-dom": "18.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.38",
+    "@types/react": "^18.0.10",
+    "eslint": "8.16.0",
+    "eslint-config-next": "12.1.6",
+    "eslint-config-prettier": "^8.5.0",
+    "gulp": "^4.0.2",
+    "jest": "^28.1.0",
+    "prettier": "^2.6.2",
+    "require-dir": "^1.2.0",
+    "typescript": "^4.7.2"
+  }
+}
