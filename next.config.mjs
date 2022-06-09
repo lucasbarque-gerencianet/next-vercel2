@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  env: config.environments
+  reactStrictMode: true
 };
 
 module.exports = nextConfig;
